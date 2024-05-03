@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logo.png" alt="Le logo " width="250" />
+        <nav class="navbar">
+            <div class="lien_nav"> <!--ajout id logo et class lien_nav et navbar pour le menu de la version mobile -Aziza-->
+                <ul>
+                    <li><a href="index.html">Accueil</a></li> <!-- ajout lien accueil -Aziza -->
+                    <li><a href="top_game.html">Jeux à la une</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="page_inscription.html">Inscription</a></li>
+                    <li><a href="page_de_connexion.html">Connexion</a></li>
+                </ul>
+            </div>
+            <img class="menu_hamburger" src="img\menu-btn.png" alt="menu hamburger"> <!--ajout de  la class lien_nav + img pour le menu de la version mobile -Aziza-->
+        </nav>
+    </header>
+    <div id="conteneur">
+        <form>
+            <h1>Se connecter</h1>
+            <div class="social">  <!-- plusieurs choix de connexion google, facebook, twitter et apple*-->
+                <p><i class="fa-brands fa-google"></i></p>
+                <p><i class="fa-brands fa-facebook-f"></i></p>
+                <p><i class="fa-brands fa-twitter"></i></p>
+                <p><i class="fa-brands fa-apple"></i></p>
+            </div>
+            <p class="choix_email">ou utiliser mon adresse e-mail :</p>
+
+            <div class="saisie">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+            </div>
+
+            <p class="inscription">Je n'ai pas de <a href="page_inscription.html"><span>compte</span></a>. Mot de passe <a href="mot_de_passe_oublie.html"><span>oublié</span></a> ?</p>
+            <div align="center">
+                <button type="submit">Se connecter</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>En cas de complications veuillez nous contacter sur <a href="">support@fantasygames.com</a><div class="copy">&copy; 2020 Le PoleS </div></p>
+   </footer>
+</body>
+</html>

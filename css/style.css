@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300&display=swap");
+
+body {
+	background: url(../img/zelda.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 2100px;
+	margin: 0;
+	/* Ajout une opacité au fond  */
+}
+
+/* Début formulaire*/
+#conteneur {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	margin-top: 100px;
+	background-color: white;
+	padding: 40px 60px;
+	border-radius: 10px;
+	min-width: 300px;
+}
+
+form h1 {
+	color: #8faa24;
+	text-align: center;
+}
+
+form .social {
+	margin-top: -10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+form .social p {
+	padding: 5px;
+	margin-left: 10px;
+	color: #48742c;
+	border: 1px solid;
+	border-radius: 100%;
+	width: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+form p.choix_email {
+	text-align: center;
+}
+
+form .saisie {
+	display: flex;
+	flex-direction: column;
+}
+
+form .saisie input[type="email"],
+input[type="password"] {
+	padding: 15px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f2f2f2;
+	margin-bottom: 15px;
+	outline: none;
+}
+
+form p.inscription {
+	font-size: 14px;
+	margin-bottom: 20px;
+	color: #878787;
+}
+
+form p.inscription span {
+	color: #00ff15;
+}
+
+form button {
+	padding: 15px 25px;
+	border: none;
+	border-radius: 5px;
+	background: linear-gradient(
+		180deg,
+		#8faa24 0%,
+		rgba(143, 170, 36, 0.72) 100%
+	);
+	font-size: 15px;
+	color: #fff;
+	background: linear-gradient(
+		180deg,
+		#8faa24 0%,
+		rgba(143, 170, 36, 0.72) 100%
+	);
+	outline: none;
+	cursor: pointer;
+	margin-top: 80px;
+}
+
+.form_oublie{
+	position: absolute;
+	top: 80px; 
+	background: #FFF;
+	border-radius: 10px;
+	width: 350px;
+	height: 600px;
+}
+
+.form_oublie h2 {
+	color: #8faa24;
+	text-align: center;
+}
+
+.form_oublie p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+.form_oublie p span {
+	color: #00ff15;
+	text-decoration-line: underline;
+}
+
+
+
+
+.elf_assis{
+	margin-left: -170px;
+	margin-top: -160px;
+	padding: 60px;
+}
+
+/* Fin formulaire*/
+
+/* ajout menue dans la nav -Aziza*/
+.navbar .menu_hamburger {
+	display: none;
+	position: absolute;
+	top: 50px;
+	right: 80px;
+	width: 35px;
+}
+
+/* responsive*/
+@media screen and (max-width: 900px) {
+	#logo {
+		margin-left: 300px;
+	}
+
+	.navbar .menu_hamburger {
+		display: block;
+	}
+
+	.lien_nav {
+		display: none;
+	}
+
+	form, .form_oublie{
+		position: absolute;
+		top:250px;
+	}
+
+	main p.texte {
+		margin: 50px;
+		padding: 50px;
+	}
+
+}
+
+/* responsive*/ 
+
+/*Ben*/
+
+.principal{
+	overflow-x: hidden;
+}
+
+.tgame {
+	font-size: 60px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.tgtexte1 {
+	flex-direction: row;
+	text-align: left;
+	/* align-items: center; */
+	padding: 0px 30px;
+}
+
+.tgimage1 {
+	padding: 0px 5em;
+	height: 500px;
+	width: 800px;
+}
+
+.tgimage2 {
+	padding: 0px 10em;
+	height: 500px;
+	width: 800px;
+	margin-top: 150px;
+}
+
+.descrip {
+	font-size: 25px;
+	align-items: right;
+	margin-left: 150px;
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* description des jeux */
+
+.tgtitle {
+	font-size: 50px;
+	font-family: "Times New Roman", Times, serif;
+	margin: 2em 3em;
+}
+/* Size titre des jeux dans la page Top_Game.html */
+
+/*  */
+
+/*  */
+
+/* Ralph */
+ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #66a344;
+	align-items: center;
+}
+
+li {
+	font-family: "Irish Grover";
+	margin: 15px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+.texte {
+	font-family: "Inknut Antiqua";
+	font-size: 2.1em;
+    margin: 50px;
+}
+footer {
+	background: #66a344;
+	height: 50px;
+	padding: 5px 5px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	justify-content: space-between;
+	
+}
+
+.copy{
+	float: right;
+	margin-top: -30px;
+	margin-right: 40px;
+}
+
+
+#Image, #Image2{
+    margin-left: 450px;
+}
+
+
+/* .......DEBUT CSS CATALOGUE........... */
+
+.container {
+	width:80%;
+	height: 1300px;
+    margin: auto;
+}
+
+/* debut */
+
+  
+  .centerBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px
+  }
+  
+  .categoryWrapper{
+
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+  }
+  
+  .categoryWrapper:after{
+	position: absolute;
+	top:0;
+	left: 0;
+	right:0;
+	bottom: 0;
+  }
+  
+  .categoryWrapper:hover:after{
+	opacity: 0.4;
+  }
+  
+  .categoryWrapper h1{
+	color:rgb(138, 125, 9);
+	font-family: 'Irish Grover', system-ui;
+	font-size: 70px;
+	letter-spacing: 4px;
+	-webkit-transition: all 0.15s ease 0s; 
+	position: relative;
+	top: -40px;
+	z-index: 10;
+  }
+  .categoryWrapper:hover h1{
+	transform: translateY(-10px);
+  }
+    .categoryWrapper button{
+	position: absolute;
+	transform: translatey(10px);
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	width: 250px;
+	height:50px;
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	z-index: 10;
+  }
+  
+  .categoryWrapper button span{
+	display: block;
+	position: relative;
+	line-height: 50px;
+	height: 50px;
+	cursor: pointer;
+  }
+  
+  .categoryWrapper button > span:after{
+	content:'';
+	position: absolute;
+	top:0;
+	left: 50%;
+	width: 20px;
+	height: 0;
+	border: 1px solid white;
+	border-left: none;
+	border-bottom: none;
+	transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper:hover button > span:after{
+	width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper button > span:before{
+	content:'';
+	position: absolute;
+	top:0;
+	right: 50%;
+	width: 20px;
+	height: 0;
+	border: 1px solid white;
+	border-right: none;
+	border-bottom: none;
+	transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper:hover button > span:before{
+	width: calc(50% - 1px);
+	height: calc(100% - 2px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+  
+  .categoryWrapper button > span > span:before{
+	content:'';
+	position: absolute;
+	bottom:0;
+	right: 0%;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	
+  }
+  
+  .categoryWrapper:hover button > span > span:before{
+	opacity: 1;
+	border-bottom: 1px solid white;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  .categoryWrapper button > span > span:after{
+	content:'';
+	position: absolute;
+	bottom:0;
+	left: 0%;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	
+  }
+  .categoryWrapper:hover button > span > span:after{
+	opacity: 1;
+	border-bottom: 1px solid white;
+	width: calc(50%);
+	height: 1px;
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+  .categoryWrapper button > span > span > span{
+	transition: color 0.15s ease-out 0.3s;
+	color: transparent;
+  }
+  .categoryWrapper:hover button > span > span > span{
+	color:white;
+  }
+/* fin */
+
+.wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content:space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+}
+.box {
+	margin: 10px;
+	width: 200px;
+	height: 390px;
+	text-align: center;
+	border-radius: 3px;
+	-webkit-transition: 200ms ease-in-out;
+	-o-transition: 200ms ease-in-out;
+	transition: 200ms ease-in-out;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.box:hover {
+	margin-bottom: -10px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+.box h2 {
+	font-family: 'Irish Grover', system-ui;
+	color: #fff;
+	padding: 30px;
+	margin-top: 300px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 23px;
+	background: rgba(0,0,0,0.8);
+	-webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+.one {
+	background: url('../img/OIP.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.one h2{
+	font-size: 19px;
+}
+.two {
+	background: url('../img/Elves_Dragons_Archers_Stormfall_Age_of_War_Bow_522809_1920x1080.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.two h2{
+	font-size: 19px;
+}
+.three {
+	background: url('../img/クルティラスのジェイナ.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.three h2{
+	font-size: 18px;
+}
+.four {
+	background: url('../img/Wizard.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.four h2{
+	font-size: 23px;
+}
+.five {
+	background: url('../img/315053-blackangel.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.six {
+	background: url('../img/422607-Kycb.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+	font-size: 12px;
+}
+.six h2 {
+	
+	font-size: 21px;
+}
+.seven {
+	background: url('../img/R\ \(1\).jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.seven h2 {
+	font-size: 21px;
+}
+.eight {
+	background: url('../img/maxresdefault.jpg ');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.eight h2{
+	font-size: 23px;
+}
+.nine {
+	background: url('../img/FROWZEN\ WIZAR.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.nine h2{
+	font-size: 20px;
+}
+.ten {
+	background: url('../img/FANTASY.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.ten h2{
+	font-size: 20px;
+}
+.eleven {
+	background: url('../img/Pin\ on\ Fem\ Elf\ Druid.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.eleven h2{
+	font-size:18px;
+}
+.twelve{
+	background: url('../img/MicrosoftTeams-image\ 4.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.twelve h2{
+	font-size: 22px;
+}
+.therteen {
+	background: url('../img/423898-Kycb_1920x1080.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;	
+}
+.therteen h2{
+	font-size: 22PX;
+}
+.fourteen{
+	background: url('../img/DOROTY\ OSE.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+.fiveteen{
+	background: url('../img/43f86398b4ccda395506343a6634e93d.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width:15%;
+	Background-size:200px 350PX;
+    border: solid  white 3px;
+    border-radius: 10px;
+}
+
+
+/*FIN CSS CATALOGUE */
